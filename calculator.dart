@@ -101,8 +101,6 @@ class _CalculatorAppState extends State<CalculatorApp> {
       appBar: AppBar(title: const Text("Calculator")),
       body: ListView(
         padding: const EdgeInsets.all(20),
-        // child: Column(
-        //   mainAxisAlignment: MainAxisAlignment.center,
         children: [
           outputsection,
           const SizedBox(
@@ -113,50 +111,6 @@ class _CalculatorAppState extends State<CalculatorApp> {
             height: 20,
           ),
           buttonsection,
-          // TextField(
-          //   decoration: InputDecoration(hintText: "Output.."),
-          // ),
-          // const SizedBox(
-          //   height: 20,
-          // ),
-          // TextField(
-          //   decoration: const InputDecoration(hintText: "Enter number 1"),
-          //   controller: t1,
-          // ),
-          // const SizedBox(
-          //   height: 20,
-          // ),
-          // TextField(
-          //   decoration: const InputDecoration(hintText: "Enter number 2"),
-          //   controller: t2,
-          // ),
-          // const Padding(
-          //   padding: EdgeInsets.only(top: 20),
-          // ),
-          // Row(
-          //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          //     children: <Widget>[
-          //       MaterialButton(
-          //         color: Colors.green,
-          //         onPressed: add,
-          //         child: const Text("+"),
-          //       ),
-          //       MaterialButton(
-          //         color: Colors.green,
-          //         onPressed: subtract,
-          //         child: const Text("-"),
-          //       ),
-          //       MaterialButton(
-          //         color: Colors.green,
-          //         onPressed: multiply,
-          //         child: const Text("*"),
-          //       ),
-          //       MaterialButton(
-          //         color: Colors.green,
-          //         onPressed: divide,
-          //         child: const Text("/"),
-          //       ),
-          //     ]),
           ElevatedButton(
               onPressed: () {
                 Navigator.push(
@@ -166,7 +120,6 @@ class _CalculatorAppState extends State<CalculatorApp> {
               },
               child: const Text("GO to new page ->"))
         ],
-        // ),
       ),
     );
   }
